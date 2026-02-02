@@ -66,7 +66,7 @@ export function ProductForm({ initialData, isEdit = false }: ProductFormProps) {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nama Produk</FormLabel>
+              <FormLabel>Nama Produk<span className="text-red-500">*</span></FormLabel>
               <FormControl>
                 <Input placeholder="Contoh: Gitar Yamaha" {...field} />
               </FormControl>
@@ -81,7 +81,7 @@ export function ProductForm({ initialData, isEdit = false }: ProductFormProps) {
             name="slug"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Slug</FormLabel>
+                <FormLabel>Slug<span className="text-red-500">*</span></FormLabel>
                 <FormControl>
                   <Input placeholder="gitar-yamaha" {...field} />
                 </FormControl>
@@ -95,7 +95,7 @@ export function ProductForm({ initialData, isEdit = false }: ProductFormProps) {
             name="price"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Harga</FormLabel>
+                <FormLabel>Harga<span className="text-red-500">*</span></FormLabel>
                 <FormControl>
                     <Input 
                         type="number" 
@@ -119,7 +119,7 @@ export function ProductForm({ initialData, isEdit = false }: ProductFormProps) {
           name="description"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Deskripsi</FormLabel>
+              <FormLabel>Deskripsi (Opsional)</FormLabel>
               <FormControl>
                 <Textarea 
                   placeholder="Jelaskan detail produk..." 

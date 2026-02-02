@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import ProductTable from '@/components/product-table'
-import { createClient } from '@/utils/supabase/server'
+import { createClient } from '@/lib/supabase/server'
 import { Button } from '@/components/ui/button'
 import { LogoutForm } from '@/components/logout-form'
 
